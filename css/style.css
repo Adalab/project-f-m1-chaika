@@ -211,15 +211,6 @@ h4 {
 
 }
 
-.sm__list--icon::after {
-    content: "*";
-    margin-left: 20px;
-
-}
-.icon1::after {
-    visibility: hidden;
-}
-
 /*FOOTER */
 
 .footer {
