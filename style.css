@@ -1,0 +1,265 @@
+ body{
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER */
+
+.grupo {
+    height: 40px;
+    background-color:#099d8d;
+    opacity: 0.95;
+    color: white;
+    margin: 0;
+    text-align: center;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.main-nav  {
+    height: 40px;
+    background-color: #14d9c4;
+    opacity: 0.90;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+
+}
+.menu a {
+    color: white;
+    text-transform: uppercase;
+}
+
+/* MAIN */
+
+.hero{
+    margin: 0px;
+    position: relative;
+}
+
+.group-picture {
+    width: 100vw;
+}
+
+.foto-grupal {
+    width: 100%;
+    position: relative;
+    bottom: 45%;
+}
+
+.lema {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    background: #ffffff;
+    width: 230px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: black;
+}
+
+.info-equipo {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+
+.container {
+    padding: 15px;
+}
+
+.equipo {
+    background-color: #ffffff;
+    }
+
+.dafo {
+    background-color: rgba(184,184,185,0.2);
+    }
+
+.container.tri {
+    position: relative;
+}
+
+.tri {
+    position: relative;
+    width: 100vw;
+}
+
+.triangulo {
+    position: absolute;
+    border: 15px solid transparent;
+    border-top-color: white;
+    height: 0;
+    width: 0;
+    left: 50%;
+    transform: translate(-50%);
+    /* left: 145px;
+    top: 990px; */
+}
+
+.aqua {
+ color: #14d9c4;
+ text-transform: uppercase;
+ }
+
+/* MAIN*/
+/* Equipo + Fortalezas + Debilidades*/
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    line-height: 45px;
+    color: #099d8d;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    color: #099d8d;
+}
+/*Quienes somos*/
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.quienes-somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 0;
+}
+
+.lista-personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.imagen-personal {
+    margin: 30px 70px 15px;
+    width: 180px;
+    border: 5px solid rgba(0,0,0,0.08);
+    border-radius: 10px;
+}
+
+.name {
+    margin: 0 85.5px 0 87.5px;
+    text-align: center;
+}
+
+.descripcion {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 124px;
+    height: 30px;
+    margin: 15px 98px;
+}
+
+.img-rss {
+    width: 20px;
+}
+/*FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 250px;
+    border-top: solid grey 1px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.copyright {
+    
+    margin: 30px 74px 0 74px;
+    color: #b8b8b9;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listado-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    margin: 20px 103px 30px;
+    padding: 0;
+    width:  114px;
+    height: 60px;;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 320px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-adalab {
+    width: 115px;
+    height: 45px;  
+}
+
