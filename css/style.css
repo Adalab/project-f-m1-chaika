@@ -208,16 +208,24 @@ h4 {
 
 .sm__list--icon {
     width: 20px;
+
 }
+
+.sm__list--icon::after {
+    content: "*";
+    margin-left: 20px;
+
+}
+.icon1::after {
+    visibility: hidden;
+}
+
 /*FOOTER */
 
-footer {
+.footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
     align-items: center;
-    height: 250px;
     border-top: solid grey 1px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -231,28 +239,30 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 
-.footer__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .footer__menu--list {
+    text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    font-size: 10px;
-    margin: 20px 103px 30px;
+    font-size: 14px;
+    margin: 20px 103px;
     padding: 0;
     width:  114px;
-    height: 60px;;
+    height: 60px;
+    line-height: 20px;
     list-style-type: none;
     justify-content: center;
     align-items: center;
+   
+    
+}
+.footer__menu--list a {
+    color: #b8b8b9;
+    font-weight: bold;
 }
 
+
 .logo {
-    width: 320px;
-    height: 45px;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,6 +270,36 @@ footer {
 
 .logo-adalab {
     width: 115px;
-    height: 45px;  
+    height: 45px; 
 }
 
+@media (min-width: 678px) {
+
+.copyright {
+    display: flex;
+    align-self: flex-start; 
+    width: auto;
+    margin: 0 45px;
+    padding: 0;     
+}
+.footer__menu {
+    width: auto;
+    display: flex;
+    align-self: flex-end;   
+}
+.footer__menu--list {
+    
+    align-items: flex-end;
+    margin: 0 45px 80px;
+    font-size: 14px;
+    line-height: 30px; 
+}
+.logo {
+    width: auto;
+    margin: -120px 45px 0;
+    display: flex;
+    align-self: flex-start;
+    padding: 0;
+}
+
+}
