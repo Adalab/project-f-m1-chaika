@@ -263,3 +263,27 @@ footer {
     height: 45px;  
 }
 
+/* *********** STRENGTHS-WEAKNESSES *********** */
+
+@media all and (min-width: 768px) and (max-width:1200px) {
+
+    .wrapper {
+        padding: 0;
+    }
+
+    .swot {
+        display: flex;
+        font-size: 16px;
+        padding: 45px 45px 60px;
+    }
+
+    .swot__strengs {
+        width: 50%;
+        margin-right: 45px;   
+    }
+
+    .swot__weaknesses {
+        width: 50%;
+    }
+}
+
