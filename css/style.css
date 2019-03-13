@@ -26,9 +26,6 @@ li {
     color: white;
     margin: 0;
     text-align: center;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     line-height: 40px;
@@ -54,6 +51,32 @@ li {
 .header__nav--menu a {
     color: white;
     text-transform: uppercase;
+}
+
+@media all and (min-width: 768px) {
+    .header {
+        background-color:#099d8d;
+        height: 60px;
+        opacity: 0.95;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .header__title {
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        align-self: center;
+    }
+    .header__nav {
+        /*background: none;*/
+        width: 500px;
+        align-self: center;
+    }
+    .header__nav--menu {
+        width: 280px;
+        justify-content: space-between;
+    }
 }
 
 /* MAIN */
