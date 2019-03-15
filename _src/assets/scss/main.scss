@@ -233,10 +233,16 @@ h4 {
 
 }
 
-
-li.icon::after {
+.icon {
+    position: relative;
+}
+.icon::after {
     content: "·";
     margin: 0 6px 0 6px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(0,-50%);
 }
 
 .last-one::after {
