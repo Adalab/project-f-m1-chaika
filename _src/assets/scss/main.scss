@@ -231,6 +231,7 @@ h4 {
     width: 150px;
     height: 30px;
     margin: 15px 98px;
+    color: #099d8d;
 }
 
 .sm__list--icon {
@@ -241,6 +242,11 @@ h4 {
 .icon {
     position: relative;
 }
+
+i {
+    color: #099d8d;
+}
+
 .icon::after {
     content: "·";
     margin: 0 6px 0 6px;
@@ -252,7 +258,7 @@ h4 {
 
 .last-one::after {
     visibility: hidden;
-  }
+}
 
 
 
