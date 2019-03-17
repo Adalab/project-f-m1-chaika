@@ -126,9 +126,11 @@ li {
     background-color: #ffffff;
     }
 
-.swot  {
-    background-color: rgba(184,184,185,0.2);
-    }
+
+    @import "components/swot";
+    // .swot  {
+//     background-color: rgba(184,184,185,0.2);
+//     }
 
 .wrapper.triangle {
     position: relative;
@@ -338,24 +340,24 @@ h4 {
 }
 /* *********** STRENGTHS-WEAKNESSES *********** */
 
-@media all and (min-width: 768px) and (max-width:1200px) {
+// @media all and (min-width: 768px) and (max-width:1200px) {
 
-    .wrapper {
-        padding: 0;
-    }
+//     .wrapper {
+//         padding: 0;
+//     }
 
-    .swot {
-        display: flex;
-        font-size: 16px;
-        padding: 45px 45px 60px;
-    }
+//     .swot {
+//         display: flex;
+//         font-size: 16px;
+//         padding: 45px 45px 60px;
+//     }
 
-    .swot__strengs {
-        width: 50%;
-        margin-right: 45px;   
-    }
+//     .swot__strengs {
+//         width: 50%;
+//         margin-right: 45px;   
+//     }
 
-    .swot__weaknesses {
-        width: 50%;
-    }
-}
+//     .swot__weaknesses {
+//         width: 50%;
+//     }
+// }
