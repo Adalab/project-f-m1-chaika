@@ -1,0 +1,47 @@
+.swot  {
+    background-color: rgba(184,184,185,0.2);
+ }
+ 
+ @media all and (min-width: 768px) {
+ 
+     .wrapper {
+         padding: 0;
+     }
+ 
+     .swot {
+         display: flex;
+         font-size: 16px;
+         padding: 45px 45px 60px;
+     }
+ 
+     .swot__strengs {
+         width: 50%;
+         margin-right: 30px;   
+     }
+ 
+     .swot__weaknesses {
+         width: 50%;
+     }
+ }
+ 
+ @media all and (min-width:1200px) {
+ 
+     .wrapper {
+         padding: 0;
+     }
+ 
+     .swot {
+         display: flex;
+         font-size: 16px;
+         padding: 45px 138px 60px;
+     }
+ 
+     .swot__strengs {
+         width: 50%;
+         margin-right: 45px;   
+     }
+ 
+     .swot__weaknesses {
+         width: 50%;
+     }
+ }
