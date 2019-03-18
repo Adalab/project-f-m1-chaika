@@ -34,8 +34,9 @@
 @media all and (min-width: 768px) {
 
     .hero__container2--claim {
-
-        background: crimson;
+        background: white;
+        color: black;
+        opacity: 0.8;
         width: 230px;
         height: 50px;
         display: flex;
@@ -43,22 +44,14 @@
         bottom: 5px;
         left: 20%;
         transform: translate(-50%, 50%);
-        color: black;
     }
 }
 
 @media all and (min-width: 1200px) {
 
     .hero__container2--claim {
-
-        background: crimson;
-        width: 230px;
+        font-size: 24px;
+        width: 290px;
         height: 50px;
-        display: flex;
-        position: absolute;
-        bottom: 5px;
-        left: 20%;
-        transform: translate(-50%, 50%);
-        color: black;
     }
 }
