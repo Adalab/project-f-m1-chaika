@@ -1,3 +1,36 @@
+.header__title {
+    height: 40px;
+    background-color:#099d8d;
+    opacity: 0.95;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.header__nav  {
+    height: 40px;
+    background-color: #14d9c4;
+    opacity: 0.90;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+.header__nav--menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+
+}
+.header__nav--menu a {
+    color: white;
+    text-transform: uppercase;
+}
 @media all and (min-width: 768px) {
     .header {
         background-color:#099d8d;
