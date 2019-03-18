@@ -1,12 +1,6 @@
 
- body{
+body{
     margin: 0;
-}
-
-.header {
-    position: fixed;
-    z-index: 2;
-    width: 100vw;
 }
 
 a {
@@ -20,63 +14,14 @@ li {
 
 /* HEADER */
 
-// ∫
+@import "layout/header";
 
 /* MAIN */
-
-
 /* HERO */
-@import "layout/header";
+
 @import "components/hero";
 
-// .hero {
-//     margin: 0px;
-//     position: relative;
-// }
 
-// .hero__container1 {
-//     width: 100vw;
-// }
-
-// .hero__container--image {
-//     width: 100%;
-//     position: relative;
-//     bottom: 45%;
-// }
-
-// .hero__container2--claim {
-//     font-family: 'Open Sans', sans-serif;
-//     font-size: 18px;
-//     line-height: 25px;
-//     background: #ffffff;
-//     width: 230px;
-//     height: 50px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     z-index: 1;
-//     position: absolute;
-//     bottom: 0;
-//     left: 50%;
-//     transform: translate(-50%, 50%);
-//     color: black;
-// }
-
-// @media all and (min-width: 768px) and (max-width:1200px) {
-
-//     .hero__container2--claim {
-
-//         background: crimson;
-//         width: 230px;
-//         height: 50px;
-//         display: flex;
-//         position: absolute;
-//         bottom: 5px;
-//         left: 20%;
-//         transform: translate(-50%, 50%);
-//         color: black;
-//     }
-// }
 
 .team {
     text-align: center;
@@ -92,11 +37,9 @@ li {
     background-color: #ffffff;
     }
 
-
+// .swot  
     @import "components/swot";
-    // .swot  {
-//     background-color: rgba(184,184,185,0.2);
-//     }
+  
 
 .wrapper.triangle {
     position: relative;
@@ -115,8 +58,7 @@ li {
     width: 0;
     left: 50%;
     transform: translate(-50%);
-    /* left: 145px;
-    top: 990px; */
+  
 }
 
 .team__container--title {
@@ -230,27 +172,3 @@ i {
 
 @import "layout/footer";
 
-
-/* *********** STRENGTHS-WEAKNESSES *********** */
-
-// @media all and (min-width: 768px) and (max-width:1200px) {
-
-//     .wrapper {
-//         padding: 0;
-//     }
-
-//     .swot {
-//         display: flex;
-//         font-size: 16px;
-//         padding: 45px 45px 60px;
-//     }
-
-//     .swot__strengs {
-//         width: 50%;
-//         margin-right: 45px;   
-//     }
-
-//     .swot__weaknesses {
-//         width: 50%;
-//     }
-// }
