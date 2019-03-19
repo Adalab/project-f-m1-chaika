@@ -1,9 +1,4 @@
 /*Quienes somos*/
-h4 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    margin: 0;
-}
 
 .who {
     display: flex;
@@ -11,6 +6,12 @@ h4 {
     justify-content: center;
     align-items: center; 
     margin-bottom: 0;
+}
+
+.who__list--name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
 }
 
 .who__list {
@@ -21,13 +22,26 @@ h4 {
     align-items: center;
     margin: 0;
     padding: 0;
-    @media all and (min-width:768px){
+
+    @media all and (min-width:768px) {
         flex-direction: row;
         padding: 41px 44px 60px 44px;
+        .who__list:nth-child(odd){
+            flex-direction: row-reverse;
+        }
+            // .card{
+            //     align-items: flex-end;
+            // }
     }
-    @media all and (min-width:1200px){
+    @media all and (min-width:1200px) {
         flex-direction: row;
         padding: 41px 300px 123px 138px;
+        .who__list:nth-child(odd){
+            flex-direction: row-reverse;
+        }
+            // .card {
+            //     align-items: flex-end;
+            // }
     }
 }
 
@@ -35,6 +49,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     @media all and (min-width:768px){
         align-items: flex-start;
         
@@ -44,46 +59,26 @@ h4 {
     }
 }
 
-
-
-
-@media all and (min-width:768px){
-    .who__list:nth-child(odd){
-        flex-direction: row-reverse;
-        padding: 60px 45px 60px 44px;
-    }
-    .card:nth-child(odd){
-        align-items: flex-end;
-    }
-}
-
-@media all and (min-width:1200px){
-    .who__list:nth-child(odd){
-        flex-direction: row-reverse;
-        padding: 60px 138px 60px 299px;
-    }
-    .card:nth-child(odd){
-        align-items: flex-end;
-    }
-}
-
 .who__list--img {
     width: 180px;
     border: 5px solid rgba(0,0,0,0.08);
     border-radius: 10px;
+    
     @media all and (min-width:768px){
         width: 205px;
         margin: 0 31px 0 0;
+        
     }
     @media all and (min-width:1200px){
         width: 278px;
         margin: 0 45px 0 0;
+        
     }
 }
 
 .who__list--name {
-    padding: 0 85.5px 0 87.5px;
-    text-align: center;
+    padding: 15px 0 0 0;
+    
     @media all and (min-width:768px){
         padding: 0;
     }
@@ -94,14 +89,15 @@ h4 {
 
 .who__list--description {
     text-align: center;
+
     @media all and (min-width:768px){
         text-align: left;
     }
     @media all and (min-width:1200px){
         text-align: left;
     }
-}
-
+}   
+       
 .sm__list {
     display: flex;
     justify-content: space-around;
@@ -109,11 +105,18 @@ h4 {
     width: 150px;
     height: 0;
     padding: 15px 0;
-    color: #099d8d;
+    color: #2d3635;
 }
 
 .sm {
-    padding: 0;
+    padding-bottom: 45px;
+
+    @media all and (min-width:768px){
+        padding: 0;
+    }
+    @media all and (min-width:1200px){
+        padding: 0;
+    }
 }
 
 .icon {
