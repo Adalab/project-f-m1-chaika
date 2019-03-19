@@ -1,141 +1,141 @@
 /*Quienes somos*/
 
 .who {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .who__list--name {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin: 0;
 }
 
 .who__list {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
 
-    @media all and (min-width:768px) {
-        flex-direction: row;
-        padding: 41px 44px 60px 44px;
-        .who__list:nth-child(odd){
-            flex-direction: row-reverse;
-        }
-            // .card{
-            //     align-items: flex-end;
-            // }
+@media all and (min-width: 768px) {
+  .who__list {
+    flex-direction: row;
+    padding: 41px 44px 60px 44px;
+  }
+  .who-we-are {
+    .who__list:nth-child(even) {
+      display: flex;
+      flex-direction: row-reverse;
+      .card {
+        align-items: flex-end;
+      }
+      .who__list--description {
+        text-align: right;
+      }
+      .who__list--img {
+        margin: 0 0 0 31px;
+      }
     }
-    @media all and (min-width:1200px) {
-        flex-direction: row;
-        padding: 41px 300px 123px 138px;
-        .who__list:nth-child(odd){
-            flex-direction: row-reverse;
-        }
-            // .card {
-            //     align-items: flex-end;
-            // }
+  }
+  @media all and (min-width: 1200px) {
+    .who-we-are {
+      .who__list--img:nth-child(even) {
+        margin: 0 0 0 45px;
+      }
     }
+  }
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @media all and (min-width:768px){
-        align-items: flex-start;
-        
-    }
-    @media all and (min-width:1200px){
-        align-items: flex-start;
-    }
+  @media all and (min-width: 768px) {
+    align-items: flex-start;
+  }
 }
 
 .who__list--img {
-    width: 180px;
-    border: 5px solid rgba(0,0,0,0.08);
-    border-radius: 10px;
-    
-    @media all and (min-width:768px){
-        width: 205px;
-        margin: 0 31px 0 0;
-        
-    }
-    @media all and (min-width:1200px){
-        width: 278px;
-        margin: 0 45px 0 0;
-        
-    }
+  width: 180px;
+  border: 5px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+
+  @media all and (min-width: 768px) {
+    width: 205px;
+    margin: 0 31px 0 0;
+  }
+  @media all and (min-width: 1200px) {
+    width: 278px;
+    margin: 0 45px 0 0;
+  }
 }
 
 .who__list--name {
-    padding: 15px 0 0 0;
-    
-    @media all and (min-width:768px){
-        padding: 0;
-    }
-    @media all and (min-width:1200px){
-        padding: 0;
-    }
+  padding: 15px 0 0 0;
+
+  @media all and (min-width: 768px) {
+    padding: 0;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .who__list--description {
-    text-align: center;
+  display: flex;
+  text-align: center;
 
-    @media all and (min-width:768px){
-        text-align: left;
-    }
-    @media all and (min-width:1200px){
-        text-align: left;
-    }
-}   
-       
+  @media all and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
 .sm__list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 150px;
-    height: 0;
-    padding: 15px 0;
-    color: #2d3635;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+  height: 0;
+  padding: 15px 0;
+  color: #2d3635;
 }
 
 .sm {
-    padding-bottom: 45px;
+  padding-bottom: 45px;
 
-    @media all and (min-width:768px){
-        padding: 0;
-    }
-    @media all and (min-width:1200px){
-        padding: 0;
-    }
+  @media all and (min-width: 768px) {
+    padding: 0;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .icon {
-    position: relative;
+  position: relative;
 }
 
 i {
-    color: #099d8d;
+  color: #099d8d;
 }
 
 .icon::after {
-    content: "·";
-    margin: 0 6px 0 6px;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(0,-50%);
+  content: "·";
+  margin: 0 6px 0 6px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(0, -50%);
 }
 
 .last-one::after {
-    visibility: hidden;
+  visibility: hidden;
 }
