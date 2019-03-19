@@ -1,20 +1,29 @@
 <main class="main__form">
     <h1 class="form__title">Contacto</h1>
     <div class="form__description">
-        <p class="description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quia, maxime repellat eveniet quos id qui!
-            Libero eos tenetur</p>
-        <small class="small-text">Todos los campos marcados con <span class="asterisk" >*</span> son obligatorios</small>
+        <p class="description__text">Si deaseas contactar con el equipo Chaika, por favor, rellena el formulario y estaremos encantadas de responderte.
+        </p>
+        <small class="small-text">Todos los campos marcados con <span class="asterisk">*</span> son obligatorios</small>
     </div>
     <div class="form__container">
         <form class="contact__form" action="/signup" method="post">
             <label class="fullName" for="fullName">Nombre completo <span class="asterisk">*</span></label>
             <input class="box" type="text" id="fullName" name="fullName" placeholder="Nombre..." required>
-            <label for="emailAddress">Email <span class="asterisk">*</span></label>
-            <input class="box" type="email" id="emailAddress" name="emailAddress" required value="nombre.apellidos@mail.com">
-            <label for="telephone">Telefono </label>
-            <input class="box" type="tel" id="telephone" name="telephone" placeholder="Ej:123456789">
+            <div class="bloque">
+                <div class="bloque1">
+                    <label for="emailAddress">Email <span class="asterisk">*</span></label>
+                    <input class="box box1" type="email" id="emailAddress" name="emailAddress" required
+                        value="nombre.apellidos@mail.com">
+                </div>
+                <div class="bloque2">
+                    <label for="telephone">Telefono </label>
+                    <input class="box box2" type="tel" id="telephone" name="telephone" placeholder="Ej:123456789">
+                </div>
+            </div>
+
             <label for="comments">Mensaje <span class="asterisk">*</span></label>
-            <textarea class="box" name="comments" id="comments" cols="80" rows="8" placeholder="¿Qué necesitas?" required></textarea>
+            <textarea class="box area" name="comments" id="comments" cols="80" rows="8" placeholder="¿Qué necesitas?"
+                required></textarea>
             <input class="btn" type="submit" value="Enviar">
         </form>
     </div>
