@@ -13,6 +13,11 @@ a {
 li {
     list-style: none;
 }
+.header {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+}
 .header__title {
     height: 40px;
     background-color:#099d8d;
@@ -25,7 +30,6 @@ li {
     line-height: 40px;
     text-transform: uppercase;
 }
-
 .header__nav  {
     height: 40px;
     background-color: #14d9c4;

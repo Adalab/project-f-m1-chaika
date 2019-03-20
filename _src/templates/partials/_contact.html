@@ -1,0 +1,33 @@
+<main class="main__form">
+    <section class="hero">
+        <div class="hero__container1">
+            <img class="hero__container--image" src="assets/images/foto-grupal.jpg" alt="Foto grupal" class="foto-grupal">
+        </div>
+    </section>
+    <h1 id="contacto" class="form__title">Contacto</h1>
+    <div class="form__description">
+        <p class="description__text">Si deaseas contactar con el equipo Chaika, por favor, rellena el formulario y
+            estaremos encantadas de responderte.</p>
+        <small class="small-text">Todos los campos marcados con <span class="asterisk">*</span> son obligatorios</small>
+    </div>
+    <div class="form__container">
+        <form class="contact__form" action="https://formspree.io/anitana2@hotmail.com" method="post">
+            <label class="fullName" for="fullName">Nombre completo <span class="asterisk">*</span></label>
+            <input class="box" type="text" id="fullName" name="fullName" placeholder="Nombre..." required>
+            <div class="bloque">
+                <div class="bloque1">
+                    <label for="emailAddress">Email <span class="asterisk">*</span></label>
+                    <input class="box box1" type="email" id="emailAddress" name="emailAddress" required
+                        value="nombre.apellidos@mail.com">
+                </div>
+                <div class="bloque2">
+                    <label for="telephone">Teléfono </label>
+                    <input class="box box2" type="tel" id="telephone" name="telephone" placeholder="Ej:123456789">
+                </div>
+            </div>
+            <label for="comments">Mensaje <span class="asterisk">*</span></label>
+            <textarea class="box area" name="comments" id="comments" cols="80" rows="8" placeholder="¿Qué necesitas?" required></textarea>
+            <input class="btn" type="submit" value="Enviar">
+        </form>
+    </div>
+</main>
