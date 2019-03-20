@@ -31,49 +31,10 @@ ul {
 @import "components/hero";
 
 
-
-.team {
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-}
-
-.wrapper {
-    padding: 15px;
-}
-
-.team__container {
-    background-color: #ffffff;
-    }
-
 // .swot  
     @import "components/swot";
-  
-
-.wrapper.triangle {
-    position: relative;
-}
-
-.triangle {
-    position: relative;
-    width: 100vw;
-}
-
-.triangle__figure {
-    position: absolute;
-    border: 15px solid transparent;
-    border-top-color: white;
-    height: 0;
-    width: 0;
-    left: 50%;
-    transform: translate(-50%);
-  
-}
-
-.team__container--title {
- color: #14d9c4;
- text-transform: uppercase;
- }
+// .team
+    @import "components/team";
 
 /* MAIN*/
 /* Equipo + Fortalezas + Debilidades*/
