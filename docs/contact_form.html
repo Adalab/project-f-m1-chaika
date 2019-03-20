@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Contact Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik:400,500"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main_contact.css">
+    </head>
+    
+    <body>
+        <header class="header">
+             <h1 class="header__title">chaika</h1>
+
+            <nav class="header__nav">
+                <ul class="header__nav--menu">
+                    <li><a href="../index.html#equipo">Equipo</a>
+
+                    </li>
+                    <li><a href="../index.html#quienes-somos">Quiénes somos</a>
+
+                    </li>
+                    <li><a href="#contacto">Contacto</a>
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main__form">
+            <section class="hero">
+                <div class="hero__container1">
+                    <img class="hero__container--image" src="assets/images/foto-grupal.jpg"
+                    alt="Foto grupal" class="foto-grupal">
+                </div>
+            </section>
+             <h1 id="contacto" class="form__title">Contacto</h1>
+
+            <div class="form__description">
+                <p class="description__text">Si deaseas contactar con el equipo Chaika, por favor, rellena el formulario
+                    y estaremos encantadas de responderte.</p> <small class="small-text">Todos los campos marcados con <span class="asterisk">*</span> son obligatorios</small>
+
+            </div>
+            <div class="form__container">
+                <form class="contact__form" action="https://formspree.io/anitana2@hotmail.com"
+                method="post">
+                    <label class="fullName" for="fullName">Nombre completo <span class="asterisk">*</span>
+
+                    </label>
+                    <input class="box" type="text" id="fullName" name="fullName" placeholder="Nombre..."
+                    required>
+                    <div class="bloque">
+                        <div class="bloque1">
+                            <label for="emailAddress">Email <span class="asterisk">*</span>
+
+                            </label>
+                            <input class="box box1" type="email" id="emailAddress" name="emailAddress"
+                            required value="nombre.apellidos@mail.com">
+                        </div>
+                        <div class="bloque2">
+                            <label for="telephone">Teléfono</label>
+                            <input class="box box2" type="tel" id="telephone" name="telephone"
+                            placeholder="Ej:123456789">
+                        </div>
+                    </div>
+                    <label for="comments">Mensaje <span class="asterisk">*</span>
+
+                    </label>
+                    <textarea class="box area" name="comments" id="comments" cols="80" rows="8"
+                    placeholder="¿Qué necesitas?" required></textarea>
+                    <input class="btn" type="submit" value="Enviar">
+                </form>
+            </div>
+        </main>
+        <div class="footer wrapper">
+            <p class="copyright">Chaika&copy;2019</p>
+            <div class="footer__menu">
+                <ul class="footer__menu--list">
+                    <li class="element"><a href="../index.html#equipo">equipo</a>
+
+                    </li>
+                    <li class="element"><a href="../index.html#quienes-somos">quiénes somos</a>
+
+                    </li>
+                    <li class="element"><a href="#contacto">contacto</a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="logo wrapper"> <a href="https://adalab.es/" target="_blank"><img class="logo-adalab" src="assets/images/logo-adalab.svg"
+                alt="Logo"></a>
+
+            </div>
+        </div>
+    </body>
+
+</html>
