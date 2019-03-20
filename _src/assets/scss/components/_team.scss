@@ -11,6 +11,18 @@
 .team__container {
   background-color: #ffffff;
 }
+
+@media all and (min-width: 768px) {
+  .team__container p {
+    margin: 0 80px 40px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .team__container p {
+    margin: 0 180px 40px;
+  }
+}
 .wrapper.triangle {
   position: relative;
 }
