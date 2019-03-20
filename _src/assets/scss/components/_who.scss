@@ -46,9 +46,17 @@
   }
   @media all and (min-width: 1200px) {
     .who-we-are {
+      margin: 0 120px;
+      .who__list:nth-child(even) {
+        padding-left: 150px;
+      }
+      .who__list:nth-child(odd) {
+        padding-right: 150px;
+      }
       .who__list--img:nth-child(even) {
         margin: 0 0 0 45px;
       }
+
     }
   }
 }
