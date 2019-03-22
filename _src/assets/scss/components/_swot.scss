@@ -2,18 +2,24 @@
     background-color: rgba(184,184,185,0.2);
  }
  
+ .wrapper {
+    padding: 0;
+}
+
+.swot {
+    
+    font-size: 16px;
+    text-align: center;
+}
+
  @media all and (min-width: 768px) {
- 
-     .wrapper {
-         padding: 0;
-     }
  
      .swot {
          display: flex;
-         font-size: 16px;
          padding: 45px 45px 60px;
+         text-align: center;
      }
- 
+    
      .swot__strengs {
          width: 50%;
          margin-right: 30px;   
@@ -25,23 +31,11 @@
  }
  
  @media all and (min-width:1200px) {
- 
-     .wrapper {
-         padding: 0;
-     }
- 
-     .swot {
-         display: flex;
-         font-size: 16px;
-         padding: 45px 138px 60px;
-     }
- 
      .swot__strengs {
-         width: 50%;
-         margin-right: 45px;   
+        margin-left: 100px;
      }
  
      .swot__weaknesses {
-         width: 50%;
+         margin-right: 100px;
      }
  }
