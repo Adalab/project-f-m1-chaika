@@ -1,41 +1,56 @@
+/*Fortalezas y Debilidades*/
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    line-height: 45px;
+    color: #099d8d;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    color: #099d8d;
+}
 .swot  {
     background-color: rgba(184,184,185,0.2);
- }
- 
- .wrapper {
+}
+
+.wrapper {
     padding: 0;
 }
 
 .swot {
-    
     font-size: 16px;
     text-align: center;
 }
 
- @media all and (min-width: 768px) {
+@media all and (min-width: 768px) {
+    .swot {
+        display: flex;
+        padding: 45px 45px 60px;
+        text-align: center;
+    }
+    .swot__strengs {
+        width: 50%;
+        margin-right: 30px;   
+    }
+    .swot__weaknesses {
+        width: 50%;
+    }
+}
  
-     .swot {
-         display: flex;
-         padding: 45px 45px 60px;
-         text-align: center;
-     }
-    
-     .swot__strengs {
-         width: 50%;
-         margin-right: 30px;   
-     }
- 
-     .swot__weaknesses {
-         width: 50%;
-     }
- }
- 
- @media all and (min-width:1200px) {
-     .swot__strengs {
+@media all and (min-width:1200px) {
+    .swot__strengs {
         margin-left: 100px;
-     }
- 
-     .swot__weaknesses {
-         margin-right: 100px;
-     }
- }
+    }
+    .swot__weaknesses {
+        margin-right: 100px;
+    }
+}

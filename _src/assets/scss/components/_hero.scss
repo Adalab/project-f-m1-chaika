@@ -1,3 +1,4 @@
+/*Hero*/
 .hero {
     margin: 0px;
     position: relative;
@@ -8,7 +9,6 @@
 }
 
 .hero__container--image {
-
     width: 100%;
     position: relative;
     bottom: 45%;
@@ -33,7 +33,6 @@
 }
 
 @media all and (min-width: 768px) {
-
     .hero__container2--claim {
         background: white;
         color: black;
@@ -49,7 +48,6 @@
 }
 
 @media all and (min-width: 1200px) {
-
     .hero__container2--claim {
         font-size: 24px;
         width: 290px;

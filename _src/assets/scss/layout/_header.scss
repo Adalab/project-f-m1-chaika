@@ -1,18 +1,24 @@
-body{
-    margin: 0;
-}
+/*HEADER*/
 .header {
     position: fixed;
     z-index: 2;
     width: 100vw;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 li {
     list-style: none;
 }
+
 .header__title {
     height: 40px;
     background-color:#099d8d;
@@ -34,18 +40,20 @@ li {
     font-size: 15px;
     line-height: 30px;
 }
+
 .header__nav--menu {
     display: flex;
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
     line-height: 40px;
-
 }
+
 .header__nav--menu a {
     color: white;
     text-transform: uppercase;
 }
+
 @media all and (min-width: 768px) {
     .header {
         background-color:#099d8d;
@@ -53,7 +61,6 @@ li {
         opacity: 0.95;
         display: flex;
         justify-content: space-between;
-
     }
     .header__title {
         padding-left: 45px;

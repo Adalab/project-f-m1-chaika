@@ -1,6 +1,8 @@
-
-
+/*HEADER*/
 @import "layout/contact-header";
-@import "pages/contact";
-@import "layout/contact-footer";
 
+/*MAIN*/
+@import "pages/contact";
+
+/*FOOTER*/
+@import "layout/contact-footer";
