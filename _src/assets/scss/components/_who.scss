@@ -1,10 +1,6 @@
 /*Quienes somos*/
-.who {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0;
+.who__title {
+  text-align: center;
 }
 
 .who__list--name {
@@ -16,59 +12,43 @@
 
 .who__list {
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+  text-align: center;
+  margin: 1px;
   padding: 0;
+  background-color: salmon;
+}
+
+.sm__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+  height: 0;
+  color: #2d3635;
+  margin: 30px;
+}
+.sm {
+  background-color: red;
+  margin: auto;
+}
+
+.card {
+  display: grid;
+  background-color: blue;
+  @media all and (min-width: 768px) {
+  }
 }
 
 @media all and (min-width: 768px) {
   .who__list {
-    flex-direction: row;
-    padding: 41px 44px 60px 44px;
-  }
-  .who-we-are {
-    .who__list:nth-child(even) {
-      display: flex;
-      flex-direction: row-reverse;
-      .card {
-        align-items: flex-end;
-      }
-      .who__list--description {
-        text-align: right;
-      }
-      .who__list--img {
-        margin: 0 0 0 31px;
-      }
-    }
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 44px;
   }
 
-  @media all and (min-width: 1200px) {
-    .who-we-are {
-      margin: 0 120px;
-      .who__list:nth-child(even) {
-        padding-left: 150px;
-      }
-      .who__list:nth-child(odd) {
-        padding-right: 150px;
-      }
-      .who__list--img:nth-child(even) {
-        margin: 0 0 0 45px;
-      }
-    }
-  }
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media all and (min-width: 768px) {
-    align-items: flex-start;
-  }
+@media all and (min-width: 1200px) {
 }
 
 .who__list--img {
@@ -79,52 +59,12 @@
   @media all and (min-width: 768px) {
     width: 205px;
     margin: 0 31px 0 0;
+    grid-column: 2/3;
   }
 
   @media all and (min-width: 1200px) {
     width: 278px;
     margin: 0 45px 0 0;
-  }
-}
-
-.who__list--name {
-  padding: 15px 0 0 0;
-
-  @media all and (min-width: 768px) {
-    padding: 0;
-  }
-  @media all and (min-width: 1200px) {
-    padding: 0;
-  }
-}
-
-.who__list--description {
-  display: flex;
-  text-align: center;
-
-  @media all and (min-width: 768px) {
-    text-align: left;
-  }
-}
-
-.sm__list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 150px;
-  height: 0;
-  padding: 15px 0;
-  color: #2d3635;
-}
-
-.sm {
-  padding-bottom: 45px;
-
-  @media all and (min-width: 768px) {
-    padding: 0;
-  }
-  @media all and (min-width: 1200px) {
-    padding: 0;
   }
 }
 
