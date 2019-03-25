@@ -24,10 +24,22 @@ li {
     width: 100vw;
 }
 
-.header__title {
+.hadder__container-title {
+    margin: 0;
     height: 40px;
     background-color:#099d8d;
     opacity: 0.95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-rocket {
+    color: white;
+    margin-right: 10px;
+}
+
+.header__title {
     color: white;
     margin: 0;
     text-align: center;
@@ -66,14 +78,10 @@ li {
         opacity: 0.95;
         display: flex;
         justify-content: space-between;
-
-    }
-    .header__title {
-        padding-left: 45px;
-        line-height: 30px;
-        display: flex;
         align-items: center;
-        align-self: center;
+    }
+    .hadder__container-title {
+        padding-left: 45px;
     }
     .header__nav {
         background: none;
