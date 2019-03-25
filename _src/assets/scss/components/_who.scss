@@ -24,6 +24,13 @@
   padding: 0;
 }
 
+.who__list:hover {
+  background-color: rgba(184,184,185,0.2);
+  border-radius: 3px;
+  transform: scale(1.05);
+  transition: background ease 1.5s, scale ease-in-out 1.5s;
+ }
+
 @media all and (min-width: 768px) {
   .who__list {
     flex-direction: row;
