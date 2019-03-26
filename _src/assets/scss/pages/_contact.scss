@@ -6,11 +6,28 @@ body {
 /*MAIN*/
 .hero {
     margin: 0px;
-    position: relative;
+    background-image: url(../images/contact-background.jpg);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    height: 400px;
 }
 
-.hero__container1 {
-    width: 100vw;
+.arrow {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom:0;
+    left: 50%;;
+    transform: translate(-50%, 0);
+}
+    
+.fa-chevron-down {
+    color: white;
+    transform: scale(2);
 }
 
 .hero__container--image {
