@@ -14,20 +14,25 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     
-    <body>
+    <body id="page">
         <!--<header>-->
         <header class="header">
-             <h1 class="header__title">chaika</h1>
+            <div class="hadder__container-title"> <a href="#page">
+            <i class="fas fa-rocket"></i>
+        </a>
 
+                 <h1 class="header__title">chaika</h1>
+
+            </div>
             <nav class="header__nav">
                 <ul class="header__nav--menu">
-                    <li><a href="#equipo">Equipo</a>
+                    <li><a href="#team-link">Equipo</a>
 
                     </li>
-                    <li><a href="#quienes-somos">Quiénes somos</a>
+                    <li><a href="#who-we-are-link">Quiénes somos</a>
 
                     </li>
-                    <li><a href="../contact_form.html">Contacto</a>
+                    <li><a href="contact_form.html">Contacto</a>
 
                     </li>
                 </ul>
@@ -36,11 +41,11 @@
         <!--<main>-->
         <section class="hero">
             <div class="hero__container1">
-                <img class="hero__container--image" src="assets/images/foto-grupal.jpg"
-                alt="Foto grupal" class="foto-grupal">
+                <img class="hero__container--image foto-grupal" src="assets/images/foto-grupal.jpg"
+                alt="Foto grupal">
             </div>
             <div class="hero__container2">
-                 <h3 class="hero__container2--claim">Resolver sin límites</h3>
+                 <h3 id="team-link" class="hero__container2--claim">Resolver sin límites</h3>
 
             </div>
         </section>
@@ -78,13 +83,14 @@
             <div class="swot__weaknesses wrapper">
                  <h3 class="swot__weaknesses--title">Debilidades</h3>
 
-                <p>La poca experiencia en el sector tecnológico permite a Chaika mantener
+                <p class="swot-text2">La poca experiencia en el sector tecnológico permite a Chaika mantener
                     una actitud abierta que proporcione el producto una perspectiva diferente
                     y única.</p>
             </div>
         </aside>
         <section class="who wrapper">
-             <h2 class="who__title" id="quienes-somos">quienes somos</h2>
+            <div id="who-we-are-link" class="who-we-are-link"></div>
+             <h2 class="who__title" id="quienes-somos">quiénes somos</h2>
 
             <ul class="who-we-are">
                 <li class="who__list">
@@ -136,7 +142,7 @@
                         <p class="who__list--description">Economista con Máster en Marketing, Comunicación y Publicidad de Instituto
                             Europeo de Diseño en Madrid. Apasionada de las nuevas tecnologías. Cuenta
                             además con experiencia internacional en tres países diferentes en B2B y
-                            B2C. Proactiva y de aprendiz rápido, posee excelentes habilidades interpersonales
+                            B2C. Proactiva y de aprendizaje rápido, posee excelentes habilidades interpersonales
                             y de comunicación.</p>
                         <div class="sm">
                             <ul class="sm__list">
@@ -254,7 +260,7 @@
                             Front-end con la ayuda de Adalab.</p>
                         <div class="sm">
                             <ul class="sm__list">
-                                <li class="icon"> <a href="https://twitter.com/patri2309" target="_blank">
+                                <li class="icon"> <a href="https://twitter.com/patijoe33?s=08" target="_blank">
                                 <i class="fab fa-twitter"></i>
                             </a>
 
@@ -286,10 +292,10 @@
                 <p class="copyright">Chaika&copy;2019</p>
                 <div class="footer__menu">
                     <ul class="footer__menu--list">
-                        <li class="element"><a href="#equipo">equipo</a>
+                        <li class="element"><a href="#team-link">equipo</a>
 
                         </li>
-                        <li class="element"><a href="#quienes-somos">quiénes somos</a>
+                        <li class="element"><a href="#who-we-are-link">quiénes somos</a>
 
                         </li>
                         <li class="element"><a href="../contact_form.html">contacto</a>
