@@ -32,7 +32,25 @@ li {
 .fa-rocket {
     color: white;
     margin-right: 10px;
+    
+    animation-duration: 1s;
+    animation-name: intro;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
+
+@keyframes intro {
+    from {
+      transform: scale(5) rotate(-45deg) translateX(-30px) translateY(-10px);
+      opacity: 0;
+
+    }
+  
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
 
 .header__title {
     color: white;
